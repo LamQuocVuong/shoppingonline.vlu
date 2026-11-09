@@ -1,0 +1,179 @@
+
+/* styles.css */
+
+.body-customer {
+  width: 1150px;
+  height: fit-content;
+  margin: 0px auto;
+}
+
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+
+div.inline {
+  display: inline-block;
+}
+
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* menu.css */
+
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 0px;
+}
+
+div.float-left {
+  float: left;
+}
+
+div.float-right {
+  float: right;
+}
+
+div.float-clear {
+  clear: both;
+}
+
+ul.menu {
+  margin: 0px;
+  padding: 0px;
+}
+
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+form.search {
+  margin: 0px;
+}
+
+input.keyword {
+  width: 110px;
+}
+
+/* datatable.css */
+
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+/* =========================
+   ADMIN ORDER - LAB MERN 07
+   ========================= */
+
+/* Tiêu đề ORDER LIST và ORDER DETAIL */
+.body-admin h2.text-center {
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Bảng đơn hàng và chi tiết đơn hàng */
+.body-admin table.datatable {
+  margin: 10px auto 20px;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+/* Tiêu đề cột màu vàng */
+.body-admin table.datatable th {
+  padding: 3px 4px;
+  background-color: #ffcc00;
+  color: #000;
+  border: 1px solid #aaa;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Nội dung các ô */
+.body-admin table.datatable td {
+  padding: 3px 4px;
+  border: 1px solid #aaa;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Các dòng dữ liệu xen kẽ trắng và vàng nhạt */
+.body-admin table.datatable tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.body-admin table.datatable tbody tr:nth-child(even) {
+  background-color: #ffeeaa;
+}
+
+/* Hiệu ứng khi rê chuột */
+.body-admin table.datatable tbody tr:hover {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+/* Ảnh sản phẩm trong ORDER DETAIL */
+.body-admin table.datatable img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+/* Nút APPROVE và CANCEL */
+.body-admin span.link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
